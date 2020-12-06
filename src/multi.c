@@ -2,8 +2,7 @@
  
 void multi()
 {
-int a,b,c;
-scanf("%d %d",&a,&b);
-c=a*b;
-printf("%d",c);
+double a,b;
+scanf("%lf %lf",&a,&b);
+printf("%lf",a*b);
 }
