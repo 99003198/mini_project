@@ -32,7 +32,7 @@ int main() {
 
 
 void test_multi(void) {
-  CU_ASSERT_EQUAL(16.00, mul(8,2));
-  CU_ASSERT_EQUAL(18.00, mul(6,3));
-  CU_ASSERT_EQUAL(50.00, mul(5,10));
+  CU_ASSERT_EQUAL(16.00, multi(8,2));
+  CU_ASSERT_EQUAL(18.00, multi(6,3));
+  CU_ASSERT_EQUAL(50.00, multi(5,10));
 }
