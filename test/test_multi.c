@@ -1,14 +1,13 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#include <multi.h>
-#define PROJECT_NAME "MULTI"
-
-/* Prototypes for all the test functions */
-void test_do_multi(void);
+#include "multi.h"
+#define PROJECT_NAME "mini_project"
 
 
-/* Start of the application test */
+void test_multi(void);
+
+
 int main() {
 /* Note: Do not edit START*/
   /*Initialize and setup the Test Framework */
@@ -17,11 +16,7 @@ int main() {
   CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
 /* Note: Do not edit END */
 
-/* Add your test functions in this format for testing*/
-  CU_add_test(suite, "MULTI", test_do_multi);
-
-
-
+  CU_add_test(suite, "TEST_MULTI", test_multi);
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
   CU_basic_set_mode(CU_BRM_VERBOSE);
@@ -34,10 +29,10 @@ int main() {
 /* Note: Do not edit END */
   return 0;
 }
-/* Write all the test functions */
-void test_do_multi(void){
-  CU_ASSERT_EQUAL(15,multi(5,3));
+
+
+void test_multi(void) {
+  CU_ASSERT_EQUAL(16.00, mul(8,2));
+  CU_ASSERT_EQUAL(18.00, mul(6,3));
+  CU_ASSERT_EQUAL(50.00, mul(5,10));
 }
-
-
-  /* Dummy fail*/
