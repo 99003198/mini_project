@@ -1,6 +1,6 @@
-#include "change.h"
+#include "multi.h"
 int main()
 {
-change();
+multi();
 return 0;
 }
