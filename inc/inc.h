@@ -1,9 +1,9 @@
-#ifndef __CHANGE_H__
-define __CHANGE_H__
+#ifndef __MULTI_H__
+#define __MULTI_H__
 
 #include<stdio.h>
 #include<stdlib.h>
 
-void change();
+void multi();
 
 #endif
