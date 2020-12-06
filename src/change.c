@@ -1,10 +1,8 @@
-#include "change.h"
+#include "multi.h"
  
-void change()
+void multi()
 {
-int c,a=5,b=8;
-c=a;
-a=b;
-b=c;
-printf("%d %d",a,b);
+int a,b,c;
+c=a*b;
+printf("%d",c);
 }
