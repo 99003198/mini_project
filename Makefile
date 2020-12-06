@@ -1,16 +1,16 @@
 # Name of the project
-PROJECT_NAME = CHANGE
+PROJECT_NAME = MULTI
 
 # Output directory
 BUILD = build
 
 # All source code files
 SRC = main.c\
-src/change.c\
+src/multi.c\
 
 # All test source files
-TEST_SRC = src/change.c\
-test/test_change.c
+TEST_SRC = src/multi.c\
+test/test_multi.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
