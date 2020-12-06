@@ -1,11 +1,11 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#include <change.h>
-#define PROJECT_NAME "CHANGE"
+#include <multi.h>
+#define PROJECT_NAME "MULTI"
 
 /* Prototypes for all the test functions */
-void test_do_change(void);
+void test_do_multi(void);
 
 
 /* Start of the application test */
@@ -18,7 +18,7 @@ int main() {
 /* Note: Do not edit END */
 
 /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "CHANGE", test_do_change);
+  CU_add_test(suite, "MULTI", test_do_multi);
 
 
 
@@ -35,8 +35,8 @@ int main() {
   return 0;
 }
 /* Write all the test functions */
-void test_do_change(void){
-  CU_ASSERT_EQUAL(8,a);
+void test_do_multi(void){
+  CU_ASSERT_EQUAL(15,multi(5,3));
 }
 
 
